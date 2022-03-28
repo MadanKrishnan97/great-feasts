@@ -1,0 +1,116 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {      
+      "tableUsers": {
+        "Type": "AWS::DynamoDB::Table",
+        "Properties": {
+          "TableName": "User-scp-2021-jan-cmpt-756",
+          "AttributeDefinitions": [
+            {
+              "AttributeName": "user_id",
+              "AttributeType": "S"
+            }
+          ],
+          "KeySchema": [
+            {
+              "AttributeName": "user_id",
+              "KeyType": "HASH"
+            }
+          ],
+          "ProvisionedThroughput": {
+            "ReadCapacityUnits": "5",
+            "WriteCapacityUnits": "5"
+          }
+        }
+      },
+	  "tableOrders": {
+        "Type": "AWS::DynamoDB::Table",
+        "Properties": {
+          "TableName": "Order-scp-2021-jan-cmpt-756",
+          "AttributeDefinitions": [
+            {
+              "AttributeName": "order_id",
+              "AttributeType": "S"
+            }
+          ],
+          "KeySchema": [
+            {
+              "AttributeName": "order_id",
+              "KeyType": "HASH"
+            }
+          ],
+          "ProvisionedThroughput": {
+            "ReadCapacityUnits": "5",
+            "WriteCapacityUnits": "5"
+          }
+        }
+      },
+	  "tableRestaurants": {
+        "Type": "AWS::DynamoDB::Table",
+        "Properties": {
+          "TableName": "Restaurant-scp-2021-jan-cmpt-756",
+          "AttributeDefinitions": [
+            {
+              "AttributeName": "restaurant_id",
+              "AttributeType": "S"
+            }
+          ],
+          "KeySchema": [
+            {
+              "AttributeName": "restaurant_id",
+              "KeyType": "HASH"
+            }
+          ],
+          "ProvisionedThroughput": {
+            "ReadCapacityUnits": "5",
+            "WriteCapacityUnits": "5"
+          }
+        }
+      },
+	  "tablePayments": {
+        "Type": "AWS::DynamoDB::Table",
+        "Properties": {
+          "TableName": "Payment-scp-2021-jan-cmpt-756",
+          "AttributeDefinitions": [
+            {
+              "AttributeName": "payment_id",
+              "AttributeType": "S"
+            }
+          ],
+          "KeySchema": [
+            {
+              "AttributeName": "payment_id",
+              "KeyType": "HASH"
+            }
+          ],
+          "ProvisionedThroughput": {
+            "ReadCapacityUnits": "5",
+            "WriteCapacityUnits": "5"
+          }
+        }
+      },
+	  "tableDeliveries": {
+        "Type": "AWS::DynamoDB::Table",
+        "Properties": {
+          "TableName": "Delivery-scp-2021-jan-cmpt-756",
+          "AttributeDefinitions": [
+            {
+              "AttributeName": "delivery_id",
+              "AttributeType": "S"
+            }
+          ],
+          "KeySchema": [
+            {
+              "AttributeName": "delivery_id",
+              "KeyType": "HASH"
+            }
+          ],
+          "ProvisionedThroughput": {
+            "ReadCapacityUnits": "5",
+            "WriteCapacityUnits": "5"
+          }
+        }
+      }
+    },
+    "Description": "DynamoDB tables for ASIAV5TGSDTASPNWLXNR"
+  }

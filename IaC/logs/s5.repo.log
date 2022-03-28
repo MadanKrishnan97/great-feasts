@@ -1,0 +1,30 @@
+The push refers to repository [ghcr.io/scp-2021-jan-cmpt-756/team-d-cmpt756s5]
+548f17aa9916: Preparing
+cac7a4440091: Preparing
+5fa52badaf52: Preparing
+347fa430a83e: Preparing
+1d70a1a1f370: Preparing
+1c1dfd72029c: Preparing
+3382a8f4aa7e: Preparing
+3c08bad1e0e1: Preparing
+d80c74ef0232: Preparing
+3ba395cfe109: Preparing
+95cff0b90fb3: Preparing
+3382a8f4aa7e: Waiting
+3c08bad1e0e1: Waiting
+d80c74ef0232: Waiting
+3ba395cfe109: Waiting
+95cff0b90fb3: Waiting
+1c1dfd72029c: Waiting
+5fa52badaf52: Layer already exists
+1d70a1a1f370: Layer already exists
+cac7a4440091: Layer already exists
+548f17aa9916: Layer already exists
+347fa430a83e: Layer already exists
+3382a8f4aa7e: Layer already exists
+3c08bad1e0e1: Layer already exists
+d80c74ef0232: Layer already exists
+1c1dfd72029c: Layer already exists
+3ba395cfe109: Layer already exists
+95cff0b90fb3: Layer already exists
+v1: digest: sha256:11879229ec8ee92af9ed0204e0288855246104237d402061894215d3308396a5 size: 2613

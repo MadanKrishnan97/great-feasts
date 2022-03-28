@@ -1,0 +1,10 @@
+secret/awscred configured
+serviceentry.networking.istio.io/dynamodb-us-east-1 created
+virtualservice.networking.istio.io/dynamodb-us-east-1 created
+service/team-d-cmpt756db created
+serviceaccount/svc-db unchanged
+serviceaccount/svc-loader unchanged
+secret/svc-loader-token unchanged
+deployment.apps/team-d-cmpt756db created
+servicemonitor.monitoring.coreos.com/team-d-cmpt756db unchanged
+virtualservice.networking.istio.io/team-d-cmpt756db created

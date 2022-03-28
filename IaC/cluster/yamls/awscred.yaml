@@ -1,0 +1,27 @@
+#
+# SFU CMPT 756.211
+#
+# This manifest is used to push your AWS credentials via k8s secret into
+# your cluster for consumption by the db service.
+#
+# You will need to put the AWS credentials here regardless of whether
+# you are running your cluster on AWS, Minikube, Azure, GCP, or anywhere
+# else. No matter where you run, you will be calling AWS DynamoDB as
+# your database.
+#
+apiVersion: v1
+kind: Secret
+metadata:
+  name: awscred
+type: Opaque
+stringData:
+  # If you are running DynamoDB from an AWS starter ID, you must specify us-east-1
+  # as your region.  If you are running from a regular AWS ID, you may specify
+  # any region.  us-west-2 is the AWS region closest to Vancouver and therefore
+  # will have the lowest geolatency.
+  AWS_REGION: us-east-1
+  AWS_ACCESS_KEY_ID: ASIAV5TGSDTASPNWLXNR
+  AWS_SECRET_ACCESS_KEY: N+NVf3HGMfXdfJGMpLUrv65/VrdNdyCWpMmx4n9m
+  # A session token is only required if you run DynamoDB from a starter ID.
+  # If you are running from a regular AWS ID, the next line will be deleted by the template tool
+  AWS_SESSION_TOKEN: IQoJb3JpZ2luX2VjEOf//////////wEaCXVzLXdlc3QtMiJIMEYCIQDvSTUEGrZTwC7s25g918obj58ahiNZhad5xNyVAUJ8xwIhAOUdvimTZ18mxrqbr+sFROqJeXmdJT7dqa5erwSkOgruKsQCCFAQABoMNDA3MTYzMjQ3ODA5Igw19YHLkEd0nJyDb3EqoQKKen+kaVbnMQ1V+mauz/znxL/AqsXtWrKoR1UVbixkuajlm3z9M7rctvIsVVmaYZWF4leUC+I+hfRkVJljMwl3bG3sPhyg8VNRBXp0QC6q46+P7w/+GEXmfv92Jj30ZIBtozrKGE6HPxX/Pd3yu2oogZHGVawcdMnncGKUnBLiW9MOssz1g+4EUsbaaV9P4YiZLSfSgsdEC+NxoibOsN3RobQXndb3FtMSSYEhf1XngYFrJHa1L1DNFMUiN0/+MgC8qTGGNtUTGnnNUwZDDhb5Fm8tx/T94uCb4ljTkKghP/pJ2d4G1S+kCbF4dEaGlw2Dle3kHBLzV0jmktBtRx+nY6EyNo9srx2ILhhsml4TlIYwPpl95o1DA+Gwpd0UCx+0MOLF7YMGOpwBRQQ7aG4JwlmIK4gwK42Wc94bVxUKuptz3yscdi6Pb29pp2tNnf98jPnq+hPKpFgkpn78e2ZeDcmSw/INsYTaa+Myr59KOsh9CIAM0ed0XL6MTdRszCtRGUiwq2MIvuzNY+wTuKtWBUXYv0I7j4bDb6plc0jGVFdNG7d1PZapei78yqbsyCMFL2v2zj5prov9TAo5RD/CAeNgm45o

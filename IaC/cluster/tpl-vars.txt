@@ -1,0 +1,37 @@
+# ALL THE VARIABLES IN THIS FILE MUST BE SPECIFIED IN THIS ORDER
+# The default container registry for this course is GitHub Container Registry (GHCR)
+# If you need to use a different registry, replace this.
+# CAUTION:  docker.io restricts the pull rate from free accounts
+#
+ZZ-CR-ID=ghcr.io
+#
+# Your userid for the container registry named above
+# As we are using GitHub's container registry, this is your GitHub username (lowercase)
+#
+ZZ-REG-ID=scp-2021-jan-cmpt-756
+#
+# The home directory for the version of Java to run Gatling.
+# Typically you can just use your regular Java version but
+# a few versions of Java cannot run Gatling
+# This path must *not* contain any whitespace!
+#
+ZZ-JAVA-HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
+#
+# The directory where Gatling is installed
+# Again, this path must *not* contain any whitespace!
+#
+ZZ-GAT-DIR=/Users/Madan/SFU/Semester3/BigDataSystems/Project/term-project-team-d/code/gatling-charts-highcharts-bundle-3.4.2
+#
+# If you are running DynamoDB from an AWS starter ID, you must specify us-east-1
+# as your region.  If you are running from a regular AWS ID, you may specify
+# any region.  us-west-2 is the AWS region closest to Vancouver and therefore
+# will have the lowest geolatency.
+#
+ZZ-AWS-REGION=us-east-1
+ZZ-AWS-ACCESS-KEY-ID=ASIAV5TGSDTASPNWLXNR
+ZZ-AWS-SECRET-ACCESS-KEY=N+NVf3HGMfXdfJGMpLUrv65/VrdNdyCWpMmx4n9m
+#
+# A session token is only required if you run DynamoDB from a starter ID.
+# If you are running from a regular AWS ID, leave the following blank
+#
+ZZ-AWS-SESSION-TOKEN=IQoJb3JpZ2luX2VjEOf//////////wEaCXVzLXdlc3QtMiJIMEYCIQDvSTUEGrZTwC7s25g918obj58ahiNZhad5xNyVAUJ8xwIhAOUdvimTZ18mxrqbr+sFROqJeXmdJT7dqa5erwSkOgruKsQCCFAQABoMNDA3MTYzMjQ3ODA5Igw19YHLkEd0nJyDb3EqoQKKen+kaVbnMQ1V+mauz/znxL/AqsXtWrKoR1UVbixkuajlm3z9M7rctvIsVVmaYZWF4leUC+I+hfRkVJljMwl3bG3sPhyg8VNRBXp0QC6q46+P7w/+GEXmfv92Jj30ZIBtozrKGE6HPxX/Pd3yu2oogZHGVawcdMnncGKUnBLiW9MOssz1g+4EUsbaaV9P4YiZLSfSgsdEC+NxoibOsN3RobQXndb3FtMSSYEhf1XngYFrJHa1L1DNFMUiN0/+MgC8qTGGNtUTGnnNUwZDDhb5Fm8tx/T94uCb4ljTkKghP/pJ2d4G1S+kCbF4dEaGlw2Dle3kHBLzV0jmktBtRx+nY6EyNo9srx2ILhhsml4TlIYwPpl95o1DA+Gwpd0UCx+0MOLF7YMGOpwBRQQ7aG4JwlmIK4gwK42Wc94bVxUKuptz3yscdi6Pb29pp2tNnf98jPnq+hPKpFgkpn78e2ZeDcmSw/INsYTaa+Myr59KOsh9CIAM0ed0XL6MTdRszCtRGUiwq2MIvuzNY+wTuKtWBUXYv0I7j4bDb6plc0jGVFdNG7d1PZapei78yqbsyCMFL2v2zj5prov9TAo5RD/CAeNgm45o

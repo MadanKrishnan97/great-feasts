@@ -1,0 +1,5 @@
+service/team-d-cmpt756s5 created
+serviceaccount/svc-s5 unchanged
+deployment.apps/team-d-cmpt756s5 created
+servicemonitor.monitoring.coreos.com/team-d-cmpt756s5 unchanged
+virtualservice.networking.istio.io/team-d-cmpt756s5 created
